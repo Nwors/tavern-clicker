@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+
+#game-wrapper {
+    background-image: url("./test.gif");
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 75%;
+    grid-template: auto/ 2fr 4fr 2fr;
+}
+.wrapper {
+    border: 3px black solid;
+    display: grid;
+    grid-gap: 65px;
+    width: 100%;
+    grid-template: 1fr 3fr auto/ auto;
+}
+
+#subscribers {
+    font-size: 75px;
+    text-align: center;
+}
+
+#head {
+    cursor: pointer;
+    display: block;
+    margin: auto auto auto auto;
+    width: 25%;
+}
+
+#big-head {
+    max-height: 0px;
+}
+
+#tavern-wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+
+#tavern-image {
+    border-top: solid 3px black;
+    width: 100%;
+    display: block;
+    margin: 3% auto auto auto;
+}
+
+
+#left-menu {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-auto-rows: 15%;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    overflow: scroll;
+    border-left: black solid 3px;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+}
+#right-menu {
+    border-right: black solid 3px;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+}
+
+.menu-item {
+    min-height: 0;
+    min-width: 0;
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(5, auto);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+
